@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+    
+    a u r o r a — page #01 by abbie / @abbiecodes
+    
+    you may:
+    — edit to your liking.
+    you may not:
+    — remove my credit.
+    — reupload the code as your own.
+    
+-->
+
+<title>aurora by abbie / @abbiecodes</title>
+<link rel="shortcut icon" href="{Favicon}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- cappuccicons -->
+<script src="//pull.cappuccicons.com/cpf.js"></script>
+
+<!-- feathericons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- CSS -->
+
+<style type="text/css">
+
+/*-- styling --*/
+
+:root {
+    --font: 'Inter', sans-serif;
+    --fontsize: 10px;
+    --bodycolour: #181818;
+    --textcolour: #fff;
+    --accentcolour: #992b66;
+    --linkcolour: #f2a8b7;
+    --bordercolour: #3b3b3b;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fontsize);
+    background-color: var(--bodycolour);
+    color: var(--textcolour);
+    word-wrap:break-word;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--linkcolour); 
+    text-decoration: none;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+a:hover {
+    color: var(--accentcolour);
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+blockquote {
+    padding: 0 0 0 1.5em;
+    border-left: 1px solid var(--bordercolour);
+    margin: 1.5em 0 1.5em 1.5em;
+}
+
+h1, h2, h3, h4, h5, .title {
+    letter-spacing: 0.06em;
+    line-height: 145%;
+    font-weight: bold;
+}
+
+h1, .title {font-size: 16px;}
+h2 {font-size: 15px;}
+h3 {font-size: 14px;}
+h4 {font-size: 13px;}
+h5 {font-size: 12px;}
+
+small {font-size: 8px;}
+big {font-size: 11px;}
+
+hr {
+    height: 1px;
+    border: none;
+    box-shadow: none;
+    background-color: var(--bordercolour);
+}
+
+pre {
+    line-height: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.controls-button svg {
+   position: fixed;
+   cursor: help;
+   width: 1.5em;
+   height: 1.5em;
+   top: 20px;
+   right: 20px;
+   z-index: 1000;
+}
+
+.tmblr-iframe-compact .tmblr-iframe–unified-controls {
+   z-index: 999999999!important;
+   margin-top: 2.5em;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+}
+
+body.controls-click .tmblr-iframe {
+   opacity: 1.0;
+   visibility: visible;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+}
+
+/*-- credit --*/
+
+#credit {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+}
+
+.credit:before{
+    content:'ea3b';
+    font-family:'cappuccicons';
+    font-size:10px;
+}
+
+/*-- scrollbar --*/
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--bodycolour);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--accentcolour);
+    border-radius: 10px;
+    border: 3px solid var(--bodycolour);
+  }
+  
+  {CustomCSS}
+
+</style>
+</head>
+<body>
+<a class="controls-button"><i data-feather="settings"></i></a>
+    <!-- credit. no touchy. -->
+
+<a href="https://abbiecodes.tumblr.com" title="theme byabbie." id="credit"><i class="cp cp-croissant-o"></i></a>
+<script>
+$(document).ready(function(){
+   $(’.controls-button’).click(function(){
+       $(‘body’).toggleClass('controls-click’);
+   });
+});
+</script>
+</body>
+</html>
